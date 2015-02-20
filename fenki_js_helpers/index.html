@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="//gubnota.github.io/fenki_js_helpers/plugin/monkey/js_lib_booster/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <style>a{-ms-word-break: break-all;word-break: break-all;}</style>
+    <title>Fenki js helpers by gubnota 2</title>
+  </head>
+  <body>
+    <a id="forkme_banner" href="https://github.com/gubnota/fenki_js_helpers">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Fenki js helpers 2</h1>
+            <h2>JavaScript helpers lib for handling load iframe within closable div and hiding it (easy access to two pages like Bing Traslate), loading XMLHTTPRequest2 across domains content, other useful stuff...</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/gubnota/fenki_js_helpers/zipball/gh-pages" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/gubnota/fenki_js_helpers/tarball/gh-pages" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h3>
+<a id="iframe_window_helper.js" class="anchor" href="#iframe_window_helper.js" aria-hidden="true"><span class="octicon octicon-link"></span></a>iframe_window_helper.js</h3>
+
+<p>Adds button to load in-frame Bing translator window. You can load <a href="//gubnota.github.io/fenki_js_helpers/lib/bing_trans/iframe_window_helper.js" target="_blank">library</a> to pre-load any other page without leaving current page.</p>
+
+<pre><code>&lt;script&gt;(function(f,e,n,k,i){
+if(!e.getElementById('iframe_window_helper_script')){
+var n=e.createElement(n),y=e.getElementsByTagName(i)[0];
+n.setAttribute('id','iframe_window_helper_script');n.async=1;
+n.src=k;y.appendChild(n);if(typeof(IFrameWindowHelper) == 'undefined'){
+n.onload = function() {
+TranslateWindow.Button("Bing Translate","Collapse");}}}})
+(window,document,'script',
+'//gubnota.github.io/fenki_js_helpers/lib/bing_trans/iframe_window_helper.js',
+'head');&lt;/script&gt;
+</code></pre>
+<h3><a id="monkey_userscripts" class="anchor" href="#monkey_userscripts" aria-hidden="true"><span class="octicon octicon-link"></span></a>monkey_userscripts</h3>
+<p><a href="//gubnota.github.io/fenki_js_helpers/plugin/monkey">gubnota.github.io/fenki_js_helpers/plugin/monkey</a></p>
+
+<a href="//gubnota.github.io/fenki_js_helpers/plugin/monkey">Browse userscripts here</a>.</p>
+
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/gubnota">gubnota</a> can be found on <a href="https://github.com/gubnota/fenki_js_helpers">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+<script src="//gubnota.github.io/fenki_js_helpers/lib/bing_trans/iframe_window_helper.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function(event) {
+    TranslateWindow.Button("Bing Translate","Collapse");
+  });
+</script>
+  </body>
+</html>
